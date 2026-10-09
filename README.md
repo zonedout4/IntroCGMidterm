@@ -5,3 +5,6 @@ I created a Shader Graph using reflection for the rings. It differs from the one
 
 ## Waterfall Shader (Texture Tiling)
 I created a Shader Graph using texture tiling and offset for the waterfall. It works by adding time to a direction vector, which controls the speed and direction that the texture moves. For the waterfall, since I want it to go straight down, the direction vector is set to 0, -1. Then, I plug that result into a Tiling and Offset node to properly output a UV. That UV output goes into sample texture, which is multiplied by base colour for the final result. This suits the scene because a texture moving downwards is a simple yet effective way to create the illusion of falling water.
+
+## Damage Texture (Multple UVs)
+I created a Shader Graph that adds a second texture using multiple sets of UVs. The addition of this second texture can be toggled with a boolean. This suits the scene because it improves visual feedback to have an additional texture on Sonic that is only visible when he is damaged.
